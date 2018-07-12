@@ -11,8 +11,9 @@ package reloj;
  */
 public class MainReloj {
     public static void main(String[]args){
-        Reloj reloj= new Reloj(12,50,59);
+        Reloj reloj= new Reloj(6,4,19);
         
         System.out.println(reloj.mostrarTiempo24Horas());
+         System.out.println(reloj.mostrarTiempo12Horas());
     }
 }

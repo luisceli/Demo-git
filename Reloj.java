@@ -79,6 +79,12 @@ public class Reloj {
     public String mostrarTiempo24Horas(){
         return String.format("%d:%d:%d",hora,minuto,segundo);
     }
-
+    public String mostrarTiempo12Horas(){
+        
+    return String.format("%02d:%02d:%02d:%s:",hora== 0|| hora==12?12: hora%12,minuto,segundo,
+            hora< 12?"AM": "PM");    
+    
+    }
 }
+
 
